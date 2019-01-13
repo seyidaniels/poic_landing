@@ -3296,7 +3296,8 @@ body {
 
 .main {
     position: relative;
-    background: #FFFFFF;
+    background: #B78743;
+    color: white;
 }
 
 
@@ -5511,8 +5512,6 @@ Created using IcoMoon - icomoon.io
 }
 
 .page-header {
-    height: 100vh;
-    max-height: 1050px;
     padding: 0;
     color: #FFFFFF;
     position: relative;
@@ -5524,8 +5523,19 @@ Created using IcoMoon - icomoon.io
     position: absolute;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat !important;
     width: 100%;
-    height: 100%;
+    height: 200%;
+    z-index: -1;
+}
+
+.custom-header-image {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 50%;
     z-index: -1;
 }
 

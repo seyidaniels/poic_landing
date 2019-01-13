@@ -5,20 +5,20 @@
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon.svg">
     <link rel="icon" type="image/png" href="assets/img/favicon.svg">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
     <title>Professor Ogundipe Innovative Challenge</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
-    />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
 
-    <!-- <link href="./assets/css/demo.css" rel="stylesheet" /> -->
-    <link href="./assets/css/custom.css" rel="stylesheet" />
-    <link href="./assets/css/float-button.css" rel="stylesheet" />
+    <!-- <link href="assets/css/demo.css" rel="stylesheet" /> -->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/float-button.css" rel="stylesheet" />
 
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
@@ -30,7 +30,7 @@
 </head>
 
 <body class="index-page sidebar-collapse">
-    <nav class="navbar navbar-expand-lg bg-orange fixed-top navbar-transparent" color-on-scroll="10">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent" color-on-scroll="10">
         <div class="container-fluid" style="padding-left: 50px; padding-right: 50px;" >
             <div class="navbar-translate">
                 <a class="navbar-brand" href="index.html">
@@ -54,11 +54,6 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link"style="font-size: 14px;">
                            Timeline
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" style="font-size: 14px;">
-                           About Us
                         </a>
                     </li>
                     <li class="nav-item">
@@ -88,20 +83,23 @@
 
     <div class="wrapper">
         <div class="page-header page-header-custom clear-filter">
-            <div class="page-header-image bg-overlay" data-parallax="true">
+            <div class="page-header-image bg-overlay"  id="particles-js" data-parallax="true">
             </div>
             <div class="container">
                 <div class="content-center brand text-left">
                     <div class="row">
                         <div class="col-md-8">
-                            <h1 class="mb-4 exh ">Professor Ogundipe <span class="text-orange">Innovative</span> Challenge</h1>
+                            <h2 class="mb-4 exh ">Professor Ogundipe <span class="text-orange">Innovative</span> Challenge</h2>
                             <p class="text-white">Do you have an innovative idea or technology-driven solution? Apply for POIC</p>
+
+
+                            <h5 class="m-4">Application opens in <span id="countdown" class="text-orange" ></span> </h5>
                             
-                            <a class=" btn btn-lg btn-orange text-left" href="{{URL('dashboard')}}"> Apply Now
+                            <!-- <a class=" btn btn-lg btn-orange text-left" href="{{URL('dashboard')}}"> Apply Now
                                 <span class="pull-right fa fa-chevron-right"></span>
                             </a>
                             <a class=" text-orange text-left ml-4" href="{{URL('dashboard')}}"> Learn More
-                                </a>
+                                </a> -->
                         </div>
                         <div class="col-md-4">
                             <img src="assets/img/home-head.png" class="img-fluid land-illust" alt="">
@@ -114,127 +112,72 @@
                     <i class="fa fa-arrow-down my-float"></i>
             </button>
         </div>
-        <img class="img-fluid" src="assets/img/patricia/home-edge.png">
-
         <div class="main">
             <div class="about" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="font-weight-bold">About Us</h3>
-                            <p>Patricia gift cards has been saving shoppers money since 2017. Patricia has grown from a single person operation to a team of close to 40 employees. Today, Patricia is the largest gift card ecommerce website on the Internet – with over 1 million visitors a year saving our users on every day purchases. </p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card card-plain">
-                                <div class="card-body about-card">
-                                    <img class="img-fluid" src="assets/img/patricia/secure.png">
-                                    <h3 class="m-0">Secure</h3>
-                                    <p>We ensure that all private information provided are secure and our transcations fraud free.We have implemented complex algorithms to help detect scams and protect our clients </p>
-                                </div>
-                            </div>
-                            <div class="card card-plain">
-                                <div class="card-body about-card">
-                                    <img class="img-fluid" src="assets/img/patricia/guara.png">
-                                    <h3 class="m-0">99.9%  Guarantee</h3>
-                                    <p>Patricia Cards guarantee that our services are stardand and reliable. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card card-plain">
-                                <div class="card-body about-card">
-                                    <img class="img-fluid" src="assets/img/patricia/quality.png">
-                                    <h3 class="m-0">24x7 Quality Support</h3>
-                                    <p>We have over 82 Employees working round the clock to ensure that you have maximum satisfaction with our platform </p>
-                                </div>
-                            </div>
-                            <div class="card card-plain">
-                                <div class="card-body about-card">
-                                    <img class="img-fluid" src="assets/img/patricia/years.png">
-                                    <h3 class="m-0">Years in the business</h3>
-                                    <p>Patricia card has been in existence for many year doings transcations manually until 2017. when we officially launch this platform to help eliminate frauds and human error </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <div class="container">
+                            <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="bio-border">
+                                           <div class="row">
+                                               <div class="col-md-4">
+                                                    <h2 class="font-weight-bold mt-1">Who is Profesor Ogundipe?</h2>
+                                                    <img src="./assets/img/prof-ogundipe.png"  class="img-fluid img-responsive" alt="">
+                                               </div>
 
-            <div class="buy-sell">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-6">
-                            <h3 class="font-weight-bold">Our Cards</h3>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-6">
-                            <div class="options float-right">
-                                <p class="d-inline active">Gift Cards</p>
-                            </div>
-                        </div>
-                    </div>
+                                               <div class="col-md-8">
 
-                    <div class="cards-item">
-                        <div class="row">
-                            
-             
-                      
+                                                    <p class="text-justify"> Proffesor Oluwatoyin Temitayo Ogundipe (born 31 May 1960) is a Nigerian academic, author and a Professor of botany. </p>
+                                                    <p class="text-justify"> He is the 12th substantive Vice-Chancellor of University of Lagos. He attended the University of Ife (now Obafemi Awolowo University) where he obtained a Bachelor of science (B.Sc.) degree in Botany. He holds a master's degree in Botany from the University of Ife and Doctorate degree (Ph.D.) from the same University. Thereafter, he obtained a master's degree in Business Administration from the University of Lagos and bagged a certificate of attendance from University of Reading in 1998.</p>
+                                                       <p class="text-justify"> Professor Ogundipe began his academic career at the University of Lagos as a lecturer where he rose to the rank of professor of Botany in 2002. He was Dean, School of Postgraduate Studies from August 2007 to July 2011 and Director, Academic Planning Unit April 2012 to April 2016. He was appointed as the vice chancellor of the University of Lagos in November 2017 having emerged highest in the interview conducted, beating Professor Olukayode Amund, and Professor Ayodeji Olukoju to the post.</p>
+                                                        <p class="text-justify"> Until his appointment in November, he was the deputy vice chancellor of the University of Lagos. </p>
+                                                          <p class="text-justify"> Toyin Ogundipe is married with children</p>  
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bonus">
-                <div class="container text-center">
-                    <h3 class="bonus-txt text-white">20% OFF ALL PURCHASE. DISCOUNTED GIFTCARDS AVAILABLE AT GREAT PRICE.</h3>
-                </div>
-            </div>
-
-
-            <div class="customer text-center">
-                <div class="container">
-                    <h3 class="text-color mb-0">A few words from our clients world wide..</h3>
-                    <!-- Testimonial Slider -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active" style="margin-bottom: 30px;">
-                                <img src="assets/img/patricia/seyike.jpeg" class="client-avatar">
-                                <p class="text-greyy mb-40" style="margin: 0 auto;
-                                max-width: 600px;">"Wonderful service. 10/10"</p>
-                                <p class="mt-3 text-bold text-ll">Seyike Sojirin, Nigeria</p>
-                            </div>
-                            <div class="carousel-item" style="margin-bottom: 30px;">
-                                <img src="assets/img/patricia/ope.jpg" class="client-avatar">
-                                <p class="text-greyy mb-40" style="margin: 0 auto;
-                                max-width: 600px;">Patricia gift card is really effective at delivery on time and they have got great customer support, i can trade and buy gift cards  at ease</p>
-                                <p class="mt-3 text-bold text-ll">Adeniran Opeyemi, Nigeria</p>
-                            </div>
-                            <div class="carousel-item" style="margin-bottom: 30px;">
-                                <img src="assets/img/patricia/ben.png" class="client-avatar">
-                                <p class="text-greyy mb-40" style="margin: 0 auto;
-                                max-width: 600px;">"Extremely easy to use and my gift card was sold quickly. I was credited instantly. Thank you Patricia!"</p>
-                                <p class="mt-3 text-bold text-ll">Benjamin, Nigeria</p>
-                            </div>
-                        </div>
-
-
-                        <ol class="carousel-indicators" style="bottom: -50px">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-                        </ol>
-                    </div>
-
-                    <!-- Testimonial Slider -->
-                </div>
-            </div>
+                                               </div>
+                                           </div>
+                                        
+                                        
+                                        
+                                       </div>
+                                    </div>
             
+                                </div>
+                    </div>
+
+            </div> 
+
+            <div class="about-poic">
+
+                 <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-md-4">
+                                   <img src="./assets/img/layer.png" alt="">
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-5 mt-4">
+                                       <h3 class="mb-0 font-weight-bold text-right underline"  > About the challenge </h3>
+                                       <div class="container mt-4">
+                                           <p class="text-justify">
+                                                Over the years, in a bid to make sure their idea come to life, Nigerian students become outbound thereby sourcing out their potentials. A staggering amount of 170,000+ students Left the country between year 2015-2018.
+                                           </p>
+                                           <p class="text-justify">
+                                                Now narrowing it down to our faculty. Early November, after it was discovered that the annual Faculty Of Science Lecture wouldn’t hold for 2018/19 academic session. We were tasked with the challenge of creating an engaging program and at the same time solving. a societal problem. A lot of thinking went into this process.
+                                           </p>
+                                           <p class="text-justify">
+                                                We reiterated a couple of times before finally concluding on an innovation challenge. This will help in engaging the minds of students and at the same time broaden their horizon when it comes to thinking. The Power of an innovative mind is one that can’t be overemphasized.
+                                           </p>
+                                       </div>
+                                </div>
+                            </div>
+                 </div>
+                  
+            </div>
+
             <div class="need-cash">
                 <div class="container">
                     <div class="cash-content text-center text-white">
-                        <h3 class="mb-0 font-weight-bold">Need Cash Today ?</h3>
-                        <p>Sell Your Unwanted Gift Cards for cash. We accept physical and electronic gift cards,as well as store credits for hundreds of popular brands.</p>
-                         <a class=" btn btn-lg btn-orange text-center" href="{{URL('dashboard')}}">Start Trading Now
+                        <h3 class="mb-0 font-weight-bold">Got a Ground Breaking Innovative Idea ?</h3>
+                        <p>Compete with over 200 Students from Nigerian Universities to win the grand prize of  <span class="text-orange">3 Million Naira</span> </p>
+                         <a class=" btn btn-lg btn-orange text-center" href="{{URL('dashboard')}}">See Rules and Guidlines
                                 <span class="pull-right fa fa-chevron-right"></span>
                             </a>
                     </div>
@@ -246,11 +189,9 @@
                     <div class="questions-content text-center">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="mt-5 mb-0 font-weight-bold">Still have questions?</h3>
-                                <p>Contact  our  Support today or chat with us live . We are available  24/7 .</p>
-                                <a class=" btn btn-lg btn-outline-orange text-center" href="https://api.whatsapp.com/send?phone=2348168279770">Chat with us on whatsapp
-                                    </a>
-                                <a class=" btn btn-lg btn-orange text-center" href="javascript:void(Tawk_API.toggle())">Chat with us Live
+                                <h3 class="mt-5 mb-0 font-weight-bold">got Inquiries?</h3>
+                                <p>For Sponsorship and Contact details, we are ready to heed your calls</p>
+                                <a class=" btn btn-lg btn-orange text-center" data-toggle="modal" data-target="#contactForm" >Message
                                     </a>
                             </div>
                         </div>
@@ -260,58 +201,19 @@
             </div>
 
             <address id = "contact">
-                <div class="patricia-footer">
+                <div class="poic-footer">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="assets/img/patricia/logo-color.png" class="img-fluid footer-img" alt="">
+                                <img src="assets/img/logo-white.png" class="img-fluid footer-img" alt="">
                                 <p>
-                                    Please feel free to contact us for any enquiry, complaint, or request. We are available 24/7 just for you.
+                                    Birth the Idea. Fuel your Passion
                                 </p>
                             </div>
-                            <div class="col-md-2">
-                                <p class="font-weight-bold">COMPANY</p>
-                                <ul class="list-style-none footer-ul">
-                                    <li>
-                                        <a href="#">TERMS & CONDITIONS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">PRIVACY POLICY</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">CAREERS</a>
-                                    </li>
-                                </ul>
+                            <div class="col-md-6">
+                                
                             </div>
 
-                            <div class="col-md-2">
-                                <p class="font-weight-bold">ABOUT</p>
-                                <ul class="list-style-none footer-ul">
-                                    <li>
-                                        <a href="#">TEAM</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">BLOG</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">DELIVERY</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">PAYMENT</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-2" style="font-size: 11px;">
-                                <p class="font-weight-bold">CONTACT</p>
-                                <p>Patricia HQ, Chevron Dr Lagos, Nigeria</p>
-                                <p><a href="mailto:patricia.comms@gmail.com">patricia.comms@gmail.com</a></p>
-                                <p><a href="mailto:giftcards@patricia.com.ng">giftcards@patricia.com.ng</a></p>
-                                <p><a href="tel:0700-PATRICIA">0700-PATRICIA</a>, <a href="tel:070072874242">070072874242</a></p>
-                            </div>
                             
                             
                             <div class="col-md-3">
@@ -332,7 +234,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class=" patri">Copyright &copy; 2018 PatriciaExchange</p>
+                        <p class=" patri">Copyright &copy; 2018 All Rights Reserved!</p>
                     </div>
                 </div>
             </address>
@@ -375,25 +277,25 @@
                 
 </body>
 <!--   Core JS Files   -->
-<script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <!-- Slider Slider -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 
-<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="./assets/js/plugins/bootstrap-switch.js"></script>
+<script src="assets/js/plugins/bootstrap-switch.js"></script>
 <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script src="./assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-<script src="./assets/js/script.js" type="text/javascript"></script>
-<script src="./assets/js/typewritter.js" type="text/javascript"></script>
+<script src="assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+<script src="assets/js/script.js" type="text/javascript"></script>
+<script src="assets/js/typewritter.js" type="text/javascript"></script>
 <!-- Scrolling Nav JavaScript -->
 <script src="assets/scroll/jquery.easing.min.js"></script>
 <script src="assets/scroll/scrolling-nav.js"></script>
-
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 
 <script type="text/javascript">
@@ -422,9 +324,44 @@
     }, 2000);
 });
 
+
+
+
+
 </script>
 
-\
+
+<script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 1, 2019 12:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get todays date and time
+          let now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          let distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
+          + minutes + "minutes " + seconds +" seconds";
+        
+          // If the count down is finished, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
 
 
 
