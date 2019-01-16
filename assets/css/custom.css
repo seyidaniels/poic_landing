@@ -6,6 +6,20 @@
     src: url('../fonts/product-sans-font/Product Sans Regular.ttf');
 }*/
 
+/* Particle js CSS */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.particles-js {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 p{
   font-size: 1.2em;
 }
